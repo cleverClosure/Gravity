@@ -1,5 +1,5 @@
 # Gravity
 Gravity simulator
 
-![](screenshots/drawing.jpg)
+![Gravity](/screenshots/gravityscreen.png)
 
