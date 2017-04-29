@@ -15,6 +15,12 @@
 		39CD5CED1EB4F1BD0078ADDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39CD5CEB1EB4F1BD0078ADDB /* Main.storyboard */; };
 		39CD5CEF1EB4F1BD0078ADDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39CD5CEE1EB4F1BD0078ADDB /* Assets.xcassets */; };
 		39CD5CF21EB4F1BD0078ADDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39CD5CF01EB4F1BD0078ADDB /* LaunchScreen.storyboard */; };
+		39CD5CFB1EB4F2090078ADDB /* planet.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 39CD5CF91EB4F2090078ADDB /* planet.atlas */; };
+		39CD5CFC1EB4F2090078ADDB /* star.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 39CD5CFA1EB4F2090078ADDB /* star.atlas */; };
+		39CD5D011EB4F2A60078ADDB /* GameSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD5CFD1EB4F2A60078ADDB /* GameSprite.swift */; };
+		39CD5D021EB4F2A60078ADDB /* Obstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD5CFE1EB4F2A60078ADDB /* Obstacle.swift */; };
+		39CD5D031EB4F2A60078ADDB /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD5CFF1EB4F2A60078ADDB /* Planet.swift */; };
+		39CD5D041EB4F2A60078ADDB /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD5D001EB4F2A60078ADDB /* Star.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		39CD5CEE1EB4F1BD0078ADDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39CD5CF11EB4F1BD0078ADDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39CD5CF31EB4F1BD0078ADDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39CD5CF91EB4F2090078ADDB /* planet.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = planet.atlas; path = Images/planet.atlas; sourceTree = "<group>"; };
+		39CD5CFA1EB4F2090078ADDB /* star.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = star.atlas; path = Images/star.atlas; sourceTree = "<group>"; };
+		39CD5CFD1EB4F2A60078ADDB /* GameSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSprite.swift; sourceTree = "<group>"; };
+		39CD5CFE1EB4F2A60078ADDB /* Obstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obstacle.swift; sourceTree = "<group>"; };
+		39CD5CFF1EB4F2A60078ADDB /* Planet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		39CD5D001EB4F2A60078ADDB /* Star.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +72,17 @@
 		39CD5CE01EB4F1BC0078ADDB /* Gravity */ = {
 			isa = PBXGroup;
 			children = (
+				39CD5CF91EB4F2090078ADDB /* planet.atlas */,
+				39CD5CFA1EB4F2090078ADDB /* star.atlas */,
 				39CD5CE11EB4F1BC0078ADDB /* AppDelegate.swift */,
 				39CD5CE31EB4F1BD0078ADDB /* GameScene.sks */,
 				39CD5CE51EB4F1BD0078ADDB /* Actions.sks */,
 				39CD5CE71EB4F1BD0078ADDB /* GameScene.swift */,
 				39CD5CE91EB4F1BD0078ADDB /* GameViewController.swift */,
+				39CD5CFD1EB4F2A60078ADDB /* GameSprite.swift */,
+				39CD5CFE1EB4F2A60078ADDB /* Obstacle.swift */,
+				39CD5CFF1EB4F2A60078ADDB /* Planet.swift */,
+				39CD5D001EB4F2A60078ADDB /* Star.swift */,
 				39CD5CEB1EB4F1BD0078ADDB /* Main.storyboard */,
 				39CD5CEE1EB4F1BD0078ADDB /* Assets.xcassets */,
 				39CD5CF01EB4F1BD0078ADDB /* LaunchScreen.storyboard */,
@@ -136,7 +154,9 @@
 				39CD5CED1EB4F1BD0078ADDB /* Main.storyboard in Resources */,
 				39CD5CE41EB4F1BD0078ADDB /* GameScene.sks in Resources */,
 				39CD5CEF1EB4F1BD0078ADDB /* Assets.xcassets in Resources */,
+				39CD5CFB1EB4F2090078ADDB /* planet.atlas in Resources */,
 				39CD5CF21EB4F1BD0078ADDB /* LaunchScreen.storyboard in Resources */,
+				39CD5CFC1EB4F2090078ADDB /* star.atlas in Resources */,
 				39CD5CE61EB4F1BD0078ADDB /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,7 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39CD5D011EB4F2A60078ADDB /* GameSprite.swift in Sources */,
 				39CD5CE81EB4F1BD0078ADDB /* GameScene.swift in Sources */,
+				39CD5D021EB4F2A60078ADDB /* Obstacle.swift in Sources */,
+				39CD5D041EB4F2A60078ADDB /* Star.swift in Sources */,
+				39CD5D031EB4F2A60078ADDB /* Planet.swift in Sources */,
 				39CD5CEA1EB4F1BD0078ADDB /* GameViewController.swift in Sources */,
 				39CD5CE21EB4F1BC0078ADDB /* AppDelegate.swift in Sources */,
 			);
